@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Revista REMAC</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-red: #b71c1c;
+      --light-red: #ffebee;
+    }
+    .bg-primary-red { background-color: var(--primary-red) !important; }
+    .text-primary-red { color: var(--primary-red) !important; }
+    .section-header {
+      background-color: var(--primary-red);
+      color: white;
+      padding: 1rem;
+      border-radius: .25rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary-red">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">REMAC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#apresentacao">Apresentação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#normas">Normas de Publicação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#expediente">Expediente</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="edicoesDropdown" role="button" data-bs-toggle="dropdown">Edições</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="edicoesDropdown">
+              <li><a class="dropdown-item" href="#ed2023-1">2023/1º Semestre</a></li>
+              <li><a class="dropdown-item" href="#ed2023-2">2023/2º Semestre</a></li>
+              <li><a class="dropdown-item" href="#ed2024-1">2024/1º Semestre</a></li>
+              <li><a class="dropdown-item" href="#ed2024-2">2024/2º Semestre</a></li>
+              <li><a class="dropdown-item" href="#ed2025-1">2025/1º Semestre</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#artigo">Artigo Exemplo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seções -->
+  <main class="mt-4">
+    <!-- Apresentação -->
+    <section id="apresentacao" class="container py-5">
+      <div class="section-header">
+        <h1 class="h2 mb-0">Revista Científica REMAC</h1>
+      </div>
+      <p>Bem-vindo à Revista Científica REMAC, dedicada a Publicações Técnico-Científicas nas áreas de Engenharia, Ciência da Computação, Estatística e tecnologias afins. Nossa missão é disseminar conhecimento rigoroso e inovador para a comunidade acadêmica e profissional.</p>
+    </section>
+
+    <!-- Normas para Publicação -->
+    <section id="normas" class="container py-5 bg-light rounded">
+      <div class="section-header">
+        <h2 class="h3 mb-0">Normas para Publicação</h2>
+      </div>
+      <ul>
+        <li>Formato: Trabalhos em português ou inglês, com até 15 páginas em PDF.</li>
+        <li>Estrutura: Resumo, Introdução, Metodologia, Resultados, Discussão, Conclusão e Referências.</li>
+        <li>Referências: Seguir normas ABNT para citações e referências.</li>
+        <li>Submissão: Via formulário online disponível em nosso site, anexando arquivo PDF e dados dos autores.</li>
+      </ul>
+    </section>
+
+    <!-- Expediente -->
+    <section id="expediente" class="container py-5">
+      <div class="section-header">
+        <h2 class="h3 mb-0">Expediente</h2>
+      </div>
+      <p><strong>Corpo Editorial:</strong> Dr. Ana Silva, Dr. Carlos Souza, Dra. Beatriz Lima.</p>
+      <p><strong>Periodicidade:</strong> Semestral (volumes em janeiro e julho).</p>
+      <p><strong>Editora:</strong> Instituto de Pesquisa Tecnológica – IPT<br>
+      Endereço: Rua das Ciências, 123, São Paulo, SP, Brasil.</p>
+    </section>
+
+    <!-- Edições Anteriores -->
+    <section id="edicoes" class="container py-5 bg-light rounded">
+      <div class="section-header">
+        <h2 class="h3 mb-0">Edições Anteriores e Atual</h2>
+      </div>
+      <ul>
+        <li id="ed2023-1"><a href="#">Vol. 1 No. 1 (Janeiro 2023)</a></li>
+        <li id="ed2023-2"><a href="#">Vol. 1 No. 2 (Julho 2023)</a></li>
+        <li id="ed2024-1"><a href="#">Vol. 2 No. 1 (Janeiro 2024)</a></li>
+        <li id="ed2024-2"><a href="#">Vol. 2 No. 2 (Julho 2024)</a></li>
+        <li id="ed2025-1"><a href="#">Vol. 3 No. 1 (Janeiro 2025)</a></li>
+      </ul>
+    </section>
+
+    <!-- Artigo Exemplo -->
+    <section id="artigo" class="container py-5">
+      <div class="section-header">
+        <h2 class="h3 mb-0">Artigo Publicado</h2>
+      </div>
+      <article>
+        <h3 class="text-primary-red">Título do Artigo Exemplo</h3>
+        <p><em>Autores:</em> João Oliveira, Maria Santos</p>
+        <h4>Resumo</h4>
+        <p>Este estudo analisa o impacto de técnicas de Machine Learning na otimização de processos industriais, com foco em modelos preditivos para manutenção preditiva.</p>
+        <h4>1. Introdução</h4>
+        <p>A indústria 4.0 vem transformando o cenário produtivo...</p>
+        <!-- Continue trecho representativo do artigo -->
+      </article>
+    </section>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
